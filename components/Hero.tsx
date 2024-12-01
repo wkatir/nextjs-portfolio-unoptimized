@@ -1,5 +1,7 @@
 import { Spotlight } from './ui/Spotlight';
 import { TextGenerateEffect } from './ui/text-generate-effect';
+import MagicButton from './ui/MagicButton';
+import { FaLocationArrow } from 'react-icons/fa';
 const Hero = () => {
   return (
     <div className="pb-20 pt-36">
@@ -15,9 +17,15 @@ const Hero = () => {
       <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
       <h2 className='uppercase tracking-widest text-xs text-center text-blue-100 max-w-80'>Dynamic Wilmer Portfolio - Inspired by JavaScript Mastery</h2>
       <TextGenerateEffect className='text-center text-[40px] md:text-5xl lg:text-6xl' words='Transforming Concepts into Seamless Experiences'></TextGenerateEffect>
-      <p className='text-center'>
+      <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
         Hi, I&apos;m Wilmer A Next.js Developer based in El Salvador 
       </p>
+      <a href="#about">
+        <MagicButton title="Show my Work"
+        icon={<FaLocationArrow />}
+        position='right'
+        />
+      </a>
       </div>
       </div>
     </div>

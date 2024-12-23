@@ -18,7 +18,7 @@ const Hero = () => {
       <h2 className='uppercase tracking-widest text-xs text-center text-blue-100 max-w-80'>Dynamic Wilmer Portfolio - Inspired by JavaScript Mastery</h2>
       <TextGenerateEffect className='text-center text-[40px] md:text-5xl lg:text-6xl' words='Transforming Concepts into Seamless Experiences'></TextGenerateEffect>
       <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
-        Hi, I&apos;m Wilmer A Next.js Developer based in El Salvador 
+        Hi, I&apos;m Wilmer A Software Developer based in El Salvador 
       </p>
       <a href="#about">
         <MagicButton title="Show my Work"

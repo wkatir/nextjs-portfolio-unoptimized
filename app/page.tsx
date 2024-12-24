@@ -5,6 +5,7 @@ import RecentProjects from "@/components/RecentProjects";
 import { navItems } from "@/data";
 import Education from "@/components/Education";
 import Experience from "@/components/Experience";
+import Approach from "@/components/Approach";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <RecentProjects></RecentProjects>
         <Education></Education>
         <Experience></Experience>
+        <Approach></Approach>
       </div>
     </main>
   );

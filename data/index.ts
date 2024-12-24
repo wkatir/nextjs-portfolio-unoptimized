@@ -1,7 +1,7 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Education", link: "#education" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -104,36 +104,30 @@ export const projects = [
   },
 ];
 
-export const testimonials = [
+export const education = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "The Universidad Francisco Gavidia provided me with a solid foundation in software engineering, emphasizing agile methodologies, leadership, and programming languages like Java and C#. The focus on object-oriented programming and fundamental skills has been pivotal for my career.",
+    name: "Engineer's Degree in Computer Software Engineering",
+    title: "Universidad Francisco Gavidia | Jan 2023 - 2028",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "ESIT's program in Cybersecurity has deepened my understanding of secure systems and methodologies, equipping me with skills in product management and agile workflows to enhance project outcomes.",
+    name: "Associate's Degree in Cybersecurity",
+    title: "ESIT | Aug 2024 - 2026",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Avanza Formación Continua's specialization in Accounting and Finance sharpened my financial analysis and accounting skills, bridging the gap between technology and business strategy.",
+    name: "Specialization in Accounting and Finance",
+    title: "Avanza Formación Continua | Jul 2024 - Feb 2025",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "The Full Stack Junior program at KODIGO offered immersive hands-on training in modern web development, focusing on technologies like React.js, TypeScript, Laravel, and SOLID design principles. This experience significantly enhanced my proficiency in responsive design and backend systems.",
+    name: "Full Stack Junior in Computer Programming",
+    title: "KODIGO | Jul 2024 - Dec 2024",
   },
 ];
 

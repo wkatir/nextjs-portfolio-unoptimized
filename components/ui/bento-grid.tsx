@@ -131,9 +131,6 @@ export const BentoGridItem = ({
                   loop: copied,
                   autoplay: copied,
                   animationData,
-                  rendererSettings: {
-                    preserveAspectRatio: "xMidYmid slice",
-                  }
                 }}></Lottie>
               </div>
               <MagicButton

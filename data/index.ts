@@ -13,7 +13,7 @@ export const gridItems = [
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/b1.svg",
+    img: "https://res.cloudinary.com/di0cvbfdb/image/upload/v1739221589/Portafolio/wxit93sxnh3uqbgbeqy4.svg",
     spareImg: "",
   },
   {
@@ -43,8 +43,8 @@ export const gridItems = [
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
-    img: "/grid.svg",
-    spareImg: "/b4.svg",
+    img: "https://res.cloudinary.com/di0cvbfdb/image/upload/v1739221593/Portafolio/ymucdmc5zelvyf6oc4dt.svg",
+    spareImg: "https://res.cloudinary.com/di0cvbfdb/image/upload/v1739222202/gsjyuwy059o2tykgpbfq.svg",
   },
 
   {
@@ -54,8 +54,9 @@ export const gridItems = [
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/b5.svg",
-    spareImg: "/grid.svg",
+    img: "https://res.cloudinary.com/di0cvbfdb/image/upload/v1739221572/Portafolio/cujvllsmilgfhyv3w0vl.svg",
+    spareImg:
+      "https://res.cloudinary.com/di0cvbfdb/image/upload/v1739221593/Portafolio/ymucdmc5zelvyf6oc4dt.svg",
   },
   {
     id: 6,
@@ -72,58 +73,62 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "React Chat Application",
-    des: "Chat app with Firebase for authentication and messaging.",
-    img: "https://res.cloudinary.com/drycov6o6/image/upload/v1735081357/wilmer-portafolio/kaclkkbmt1qt5gbimmmj.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
-    link: "https://github.com/wkatir/React-AppChat-FireBase",
+    title: "Project in Progress",
+    des: "This project is currently under development.",
+    img: "https://res.cloudinary.com/di0cvbfdb/image/upload/v1739224663/Portafolio/ltxskzbtniy3xtdvafum.png",
+    iconLists: ["https://res.cloudinary.com/di0cvbfdb/image/upload/v1739221579/Portafolio/qxizde0d73isslhk7lsx.svg"],
+    link: "#",
   },
   {
     id: 2,
-    title: "Kodigo Music Player",
-    des: "Simple music player using Spotify's API.",
-    img: "https://res.cloudinary.com/drycov6o6/image/upload/v1735081357/wilmer-portafolio/wf9zejukz74rnhu036kg.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
-    link: "https://github.com/wkatir/KodigoMusic",
+    title: "Ongoing Development",
+    des: "A new project is in progress, stay tuned for updates.",
+    img: "https://res.cloudinary.com/di0cvbfdb/image/upload/v1739224663/Portafolio/ltxskzbtniy3xtdvafum.png",
+    iconLists: ["https://res.cloudinary.com/di0cvbfdb/image/upload/v1739221579/Portafolio/qxizde0d73isslhk7lsx.svg"],
+    link: "#",
   },
   {
     id: 3,
-    title: "InnovaTech Website",
-    des: "Responsive site for showcasing InnovaTech's services.",
-    img: "https://res.cloudinary.com/drycov6o6/image/upload/v1735081359/wilmer-portafolio/uelxhcz9j1wm8uxoyzox.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
-    link: "https://github.com/wkatir/innova-tech-network-html-js",
+    title: "Work in Progress",
+    des: "This project is currently being worked on.",
+    img: "https://res.cloudinary.com/di0cvbfdb/image/upload/v1739224663/Portafolio/ltxskzbtniy3xtdvafum.png",
+    iconLists: ["https://res.cloudinary.com/di0cvbfdb/image/upload/v1739221579/Portafolio/qxizde0d73isslhk7lsx.svg"],
+    link: "#",
   },
   {
     id: 4,
-    title: "Next.js ShadCN Dashboard",
-    des: "Responsive dashboard built with Next.js and ShadCN.",
-    img: "https://res.cloudinary.com/drycov6o6/image/upload/v1735081355/wilmer-portafolio/npfedjyqywybcmpyjbzl.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
-    link: "https://github.com/wkatir/next-shadcn-dashboard",
+    title: "Upcoming Project",
+    des: "A new project is on the way. More details soon!",
+    img: "https://res.cloudinary.com/di0cvbfdb/image/upload/v1739224663/Portafolio/ltxskzbtniy3xtdvafum.png",
+    iconLists: ["https://res.cloudinary.com/di0cvbfdb/image/upload/v1739221579/Portafolio/qxizde0d73isslhk7lsx.svg"],
+    link: "#",
   },
 ];
 
 export const education = [
   {
-    "quote": "Solid foundation in software engineering, agile methodologies, and object-oriented programming with Java and C#.",
-    "name": "Engineer's Degree in Computer Software Engineering",
-    "title": "Universidad Francisco Gavidia | Jan 2023 - 2028"
+    quote:
+      "Solid foundation in software engineering, agile methodologies, and object-oriented programming with Java and C#.",
+    name: "Engineer's Degree in Computer Software Engineering",
+    title: "Universidad Francisco Gavidia | Jan 2023 - 2028",
   },
   {
-    "quote": "Deepened understanding of secure systems, product management, and agile workflows.",
-    "name": "Associate's Degree in Cybersecurity",
-    "title": "ESIT | Aug 2024 - 2026"
+    quote:
+      "Deepened understanding of secure systems, product management, and agile workflows.",
+    name: "Associate's Degree in Cybersecurity",
+    title: "ESIT | Aug 2024 - 2026",
   },
   {
-    "quote": "Sharpened financial analysis and accounting skills, bridging technology and business strategy.",
-    "name": "Specialization in Accounting and Finance",
-    "title": "Avanza Formación Continua | Jul 2024 - Feb 2025"
+    quote:
+      "Sharpened financial analysis and accounting skills, bridging technology and business strategy.",
+    name: "Specialization in Accounting and Finance",
+    title: "Avanza Formación Continua | Jul 2024 - Feb 2025",
   },
   {
-    "quote": "Immersive training in web development with React.js, TypeScript, Laravel, and SOLID principles.",
-    "name": "Full Stack Junior in Computer Programming",
-    "title": "KODIGO | Jul 2024 - Dec 2024"
+    quote:
+      "Immersive training in web development with React.js, TypeScript, Laravel, and SOLID principles.",
+    name: "Full Stack Junior in Computer Programming",
+    title: "KODIGO | Jul 2024 - Dec 2024",
   },
 ];
 
@@ -131,32 +136,32 @@ export const companies = [
   {
     id: 1,
     name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
+    img: "https://res.cloudinary.com/di0cvbfdb/image/upload/v1739221570/Portafolio/fusyzhh3uyaqqifvryps.svg",
+    nameImg: "https://res.cloudinary.com/di0cvbfdb/image/upload/v1739221570/Portafolio/oveps9v8tdmdh9ghswpq.svg",
   },
   {
     id: 2,
     name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
+    img: "https://res.cloudinary.com/di0cvbfdb/image/upload/v1739221570/Portafolio/rs7s16slhhsqu5rglkrx.svg",
+    nameImg: "https://res.cloudinary.com/di0cvbfdb/image/upload/v1739221570/Portafolio/whvzkyazhfbrfzo0udxr.svg",
   },
   {
     id: 3,
     name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
+    img: "https://res.cloudinary.com/di0cvbfdb/image/upload/v1739221575/Portafolio/rbw30nxqsr6il28dqia0.svg",
+    nameImg: "https://res.cloudinary.com/di0cvbfdb/image/upload/v1739221576/Portafolio/qmak20jgm3myqdmsfa9g.svg",
   },
   {
     id: 4,
     name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
+    img: "https://res.cloudinary.com/di0cvbfdb/image/upload/v1739221577/Portafolio/bweg22bt510rwivjfkpf.svg",
+    nameImg: "https://res.cloudinary.com/di0cvbfdb/image/upload/v1739221578/Portafolio/elbmwbmhmn4kkqnxtm3f.svg",
   },
   {
     id: 5,
     name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
+    img: "https://res.cloudinary.com/di0cvbfdb/image/upload/v1739221572/Portafolio/vpkhmdxyw42onuknjumc.svg",
+    nameImg: "https://res.cloudinary.com/di0cvbfdb/image/upload/v1739221572/Portafolio/pqhin0bmnvgbflswj9qe.svg",
   },
 ];
 
@@ -166,40 +171,40 @@ export const workExperience = [
     title: "Frontend Engineer Intern",
     desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
     className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    thumbnail: "https://res.cloudinary.com/di0cvbfdb/image/upload/v1739221575/Portafolio/dpgqog80l6m0g09hhyvv.svg",
   },
   {
     id: 2,
     title: "Aspiring Software Developer",
     desc: "Pursuing a degree in Software Engineering, with a focus on modern web development practices and continuous learning.",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
+    thumbnail: "https://res.cloudinary.com/di0cvbfdb/image/upload/v1739221573/Portafolio/ibxj3wzziyjaqgliupdk.svg",
   },
   {
     id: 3,
     title: "Freelance Web Development",
     desc: "Built and maintained websites for clients, focusing on clean design, accessibility, and performance optimization.",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
+    thumbnail: "https://res.cloudinary.com/di0cvbfdb/image/upload/v1739221573/Portafolio/vil4ktrcbjhpja6mj6mi.svg",
   },
   {
     id: 4,
     title: "Student & Technology Enthusiast",
     desc: "Committed to learning and exploring the latest web technologies to enhance problem-solving and development skills.",
     className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    thumbnail: "https://res.cloudinary.com/di0cvbfdb/image/upload/v1739221573/Portafolio/slntrj4xrczhi593souc.svg",
   },
 ];
 
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg",
+    img: "https://res.cloudinary.com/di0cvbfdb/image/upload/v1739221575/Portafolio/mq95kltjhtmgbas8cmsy.svg",
     link: "https://github.com/wkatir",
   },
   {
     id: 2,
-    img: "/link.svg",
+    img: "https://res.cloudinary.com/di0cvbfdb/image/upload/v1739221576/Portafolio/f1bq15jqkg1srq46j8xs.svg",
     link: "https://www.linkedin.com/in/-wilmer-salazar/",
   },
 ];

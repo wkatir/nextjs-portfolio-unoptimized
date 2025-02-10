@@ -1,12 +1,30 @@
 'use client'
 import { cn } from "@/lib/utils";
-import { BackgroundGradientAnimation } from "./background-gradient-animation";
-import { GlobeDemo } from "./grid-globe";
-import Lottie from "react-lottie";
-import { useState } from "react";
-import animationData from "@/data/confetti.json";
-import MagicButton from "./MagicButton";
+import { useState, useEffect } from "react";
+import dynamic from 'next/dynamic';
 import { IoCopyOutline } from "react-icons/io5";
+import animationData from "@/data/confetti.json";
+
+// Dynamic imports for browser-dependent components
+const BackgroundGradientAnimation = dynamic(
+  () => import("./background-gradient-animation").then(mod => mod.BackgroundGradientAnimation),
+  { ssr: false }
+);
+
+const GlobeDemo = dynamic(
+  () => import("./grid-globe").then(mod => mod.GlobeDemo),
+  { ssr: false }
+);
+
+const Lottie = dynamic(
+  () => import("lottie-react").then(mod => mod.default),
+  { ssr: false }
+);
+
+const MagicButton = dynamic(
+  () => import("./MagicButton").then(mod => mod.default),
+  { ssr: false }
+);
 
 export const BentoGrid = ({
   className,
@@ -46,14 +64,23 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-
   const [copied, setCopied] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText("wilmerhenrysalazarmartinez@gmail.com");
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
-    setCopied(true);
-
+  const handleCopy = async () => {
+    if (typeof navigator !== 'undefined') {
+      try {
+        await navigator.clipboard.writeText("wilmerhenrysalazarmartinez@gmail.com");
+        setCopied(true);
+        setTimeout(() => setCopied(false), 3000);
+      } catch (err) {
+        console.error('Failed to copy:', err);
+      }
+    }
   }
 
   return (
@@ -64,22 +91,32 @@ export const BentoGridItem = ({
       )}
       style={{
         background: "rgb(4,7,29)",
-        backgroundColor:
-          "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+        backgroundColor: "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
       }}
     >
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
-          {img && (<img src={img} alt={img} className={cn(imgClassName, "object-cover object-center ")}></img>)}
+          {img && (
+            <img 
+              src={img} 
+              alt={img} 
+              className={cn(imgClassName, "object-cover object-center")}
+            />
+          )}
         </div>
-        <div className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"
-          } `}>
-          {spareImg && (<img src={spareImg} alt={spareImg} className="object-cover object-center w-full h-full"></img>)}
+        <div className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"}`}>
+          {spareImg && (
+            <img 
+              src={spareImg} 
+              alt={spareImg} 
+              className="object-cover object-center w-full h-full"
+            />
+          )}
         </div>
-        {id === 6 && (
+        {mounted && id === 6 && (
           <BackgroundGradientAnimation>
-{/*             <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
- */}          </BackgroundGradientAnimation>
+            {/* Client-side only content */}
+          </BackgroundGradientAnimation>
         )}
 
         <div className={cn(
@@ -89,11 +126,12 @@ export const BentoGridItem = ({
           <div className="font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10">
             {description}
           </div>
-          <div className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}>
+          <div className="font-sans text-lg lg:text-3xl max-w-96 font-bold z-10">
             {title}
           </div>
 
-          {id === 2 && <GlobeDemo />}
+          {mounted && id === 2 && <GlobeDemo />}
+          
           {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
@@ -106,10 +144,10 @@ export const BentoGridItem = ({
                     {item}
                   </span>
                 ))}
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+                <span className="lg:py-4 lg:px-3 py-4 px-3 rounded-lg text-center bg-[#10132E]" />
               </div>
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+                <span className="lg:py-4 lg:px-3 py-4 px-3 rounded-lg text-center bg-[#10132E]" />
                 {["MySQL", "Laravel", "Python"].map((item, i) => (
                   <span
                     key={i}
@@ -119,27 +157,27 @@ export const BentoGridItem = ({
                     {item}
                   </span>
                 ))}
-
-
               </div>
             </div>
           )}
-          {id === 6 && (
+
+          {mounted && id === 6 && (
             <div className="mt-5 relative">
               <div className={`absolute -bottom-5 right-0`}>
-                <Lottie options={{
-                  loop: copied,
-                  autoplay: copied,
-                  animationData,
-                }}></Lottie>
+                <Lottie
+                  animationData={animationData}
+                  loop={copied}
+                  autoplay={copied}
+                  style={{ width: 150, height: 150 }}
+                />
               </div>
               <MagicButton
                 title={copied ? "Email Copied" : "Copy my email"}
-                icon={<IoCopyOutline></IoCopyOutline>}
+                icon={<IoCopyOutline />}
                 position="left"
                 otherClasses="bg-[#161a31]"
                 handleClick={handleCopy}
-              ></MagicButton>
+              />
             </div>
           )}
         </div>

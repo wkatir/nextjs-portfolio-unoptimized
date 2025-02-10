@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning className={inter.className}>
      
      <head>
-     <link rel="icon" href="https://res.cloudinary.com/drycov6o6/image/upload/v1735079346/wilmer-portafolio/so0zko3ilzmzuv8dvrho.ico" sizes="any" />
+     <link rel="icon" href="https://res.cloudinary.com/di0cvbfdb/image/upload/v1739221576/Portafolio/rvzcnrydf5wmotriyjdc.svg" sizes="any" />
      </head>
       <body>
         <ThemeProvider
